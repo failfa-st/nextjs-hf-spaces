@@ -1,6 +1,6 @@
 ---
 title: Next.js Docker Starter
-emoji: 🐳🤘
+emoji: "\U0001F433\U0001F918"
 colorFrom: purple
 colorTo: blue
 sdk: docker
@@ -12,6 +12,17 @@ app_port: 3000
 # nextjs-docker-starter
 
 This starter can be used to run [Next.js](https://nextjs.org/) using [Docker](https://huggingface.co/docs/hub/spaces-sdks-docker) in 🤗 [Spaces](https://huggingface.co/spaces).
+
+<!-- toc -->
+
+- [Development](#development)
+- [Use the Docker container locally](#use-the-docker-container-locally)
+- [Dockerize an existing project](#dockerize-an-existing-project)
+- [Manage your Space via GitHub](#manage-your-space-via-github)
+
+<!-- tocstop -->
+
+---
 
 ## Development
 

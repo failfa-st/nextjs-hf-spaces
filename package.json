@@ -1,10 +1,26 @@
 {
-  "private": true,
+  "name": "nextjs-docker-starter",
+  "version": "1.0.0",
+  "description": "Run your ML demo app using Next.js on 🤗 Spaces",
+  "keywords": [
+    "nextjs",
+    "artificial intelligence",
+    "javascript",
+    "hugging face spaces",
+    "machine learning"
+  ],
+  "license": "AGPL",
+  "author": {
+    "name": "Tim Pietrusky",
+    "url": "https://github.com/TimPietrusky"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "spj": "npx sort-package-json",
+    "toc": "npx markdown-toc README.md -i"
   },
   "dependencies": {
     "@types/node": "20.1.4",
