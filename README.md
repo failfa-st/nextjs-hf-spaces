@@ -11,7 +11,7 @@ app_port: 3000
 
 # nextjs-docker-starter
 
-This example can be used to run [Next.js](https://nextjs.org/) using [Docker](https://huggingface.co/docs/hub/spaces-sdks-docker) in 🤗 [Spaces](https://huggingface.co/spaces).
+This starter can be used to run [Next.js](https://nextjs.org/) using [Docker](https://huggingface.co/docs/hub/spaces-sdks-docker) in 🤗 [Spaces](https://huggingface.co/spaces).
 
 ## Development
 
@@ -45,6 +45,15 @@ This will build the project as a standalone app inside the Docker image.
 
 ## Manage your Space via GitHub
 
-If you want to use all the features for collaborative development on GitHub, but keep your demo on Spaces, then you can setup a GitHub action that will automatically push changes from GitHub into Spaces.
+If you want to use all the features for collaborative development on GitHub, but keep your demo on Spaces, then you can set up a GitHub action that will automatically push changes from GitHub into Spaces.
 
-https://huggingface.co/docs/hub/spaces-github-actions
+1. Create your repo on GitHub
+2. Create a [Github secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) named `HF_TOKEN` and use an [access token from Hugging Face](https://huggingface.co/settings/tokens) as its value (you must be logged in to do this)
+3. Update the workflow [sync_to_hf_spaces.yml](.githug/worfkows/sync_to_hf_spaces.yml)
+   a. Configure `HF_USERNAME` with the name of your user or your organization
+   b. Configure `HF_SPACE_NAME` with the name of your space
+4. Push the code into your repo on GitHub
+
+This should force push changes in the **main** branch from GitHub into your 🤗 space.
+
+For further information, you can check out the [guide on Hugging Face](https://huggingface.co/docs/hub/spaces-github-actions).
