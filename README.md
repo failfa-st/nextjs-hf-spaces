@@ -47,11 +47,13 @@ This will build the project as a standalone app inside the Docker image.
 
 If you want to use all the features for collaborative development on GitHub, but keep your demo on Spaces, then you can set up a GitHub action that will automatically push changes from GitHub into Spaces.
 
+> ℹ️ Git-LFS is required for files bigger than 10MB
+
 1. Create your repo on GitHub
 2. Create a [Github secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) named `HF_TOKEN` and use an [access token from Hugging Face](https://huggingface.co/settings/tokens) as its value (you must be logged in to do this)
 3. Update the workflow [sync_to_hf_spaces.yml](.githug/worfkows/sync_to_hf_spaces.yml)
-   a. Configure `HF_USERNAME` with the name of your user or your organization
-   b. Configure `HF_SPACE_NAME` with the name of your space
+   a. Configure `HF_USERNAME`: Replace `failfast` with the name of your 🤗 user account or your 🤗 organization
+   b. Configure `HF_SPACE_NAME`: Replace `nextjs-docker-starter` with the name of your 🤗 space
 4. Push the code into your repo on GitHub
 
 This should force push changes in the **main** branch from GitHub into your 🤗 space.
