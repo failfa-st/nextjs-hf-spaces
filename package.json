@@ -23,6 +23,12 @@
     "toc": "npx markdown-toc README.md -i"
   },
   "dependencies": {
+    "@emotion/cache": "11.10.7",
+    "@emotion/server": "11.10.0",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@mui/icons-material": "5.11.16",
+    "@mui/material": "5.12.0",
     "@types/node": "20.1.4",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
