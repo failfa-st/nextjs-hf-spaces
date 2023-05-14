@@ -15,10 +15,11 @@ This starter can be used to run [Next.js](https://nextjs.org/) using [Docker](ht
 
 <!-- toc -->
 
-- [Development](#development)
-- [Use the Docker container locally](#use-the-docker-container-locally)
-- [Dockerize an existing project](#dockerize-an-existing-project)
-- [Manage your Space via GitHub](#manage-your-space-via-github)
+- [nextjs-docker-starter](#nextjs-docker-starter)
+  - [Development](#development)
+  - [Use the Docker container locally](#use-the-docker-container-locally)
+  - [Dockerize an existing project](#dockerize-an-existing-project)
+  - [Manage your Space via GitHub](#manage-your-space-via-github)
 
 <!-- tocstop -->
 
@@ -62,7 +63,7 @@ If you want to use all the features for collaborative development on GitHub, but
 
 1. Create your repo on GitHub
 2. Create a [Github secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) named `HF_TOKEN` and use an [access token from Hugging Face](https://huggingface.co/settings/tokens) as its value (you must be logged in to do this)
-3. Update the workflow [sync_to_hf_spaces.yml](.github/worfkows/sync_to_hf_spaces.yml)
+3. Update the workflow [sync_to_hf_spaces.yml](.github/workflows/sync_to_hf_spaces.yml)
    - Configure `HF_USERNAME`: Replace `failfast` with the name of your 🤗 user account or your 🤗 organization
    - Configure `HF_SPACE_NAME`: Replace `nextjs-docker-starter` with the name of your 🤗 space
 4. Push the code into your repo on GitHub
