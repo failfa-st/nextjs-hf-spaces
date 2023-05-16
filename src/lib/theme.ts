@@ -41,12 +41,18 @@ const theme = extendTheme({
   },
   typography: {
     ...roboto.style,
+    h1: {
+      fontSize: "5.25em",
+    },
   },
   components: {
     MuiLink: {
       styleOverrides: {
         root: {
           textDecoration: "none",
+          ":hover": {
+            textDecoration: "underline",
+          },
         },
       },
     },

@@ -1,18 +1,19 @@
-import { Link, Typography } from "@mui/material";
-import { Box } from "@mui/material";
+import { Button, Link, Paper, Stack, Typography } from "@mui/material";
+import { HighlightBox } from "./boxes";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 export default function Title() {
   return (
-    <Box
+    <Stack
+      spacing={4}
       sx={{
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "20vh",
+        minHeight: "40vh",
+        p: 4,
       }}
     >
-      <Typography variant="h2" component="h1">
-        {" "}
+      <Typography variant="h1" component="h1">
         <Link
           href="https://nextjs.org"
           target="_blank"
@@ -29,6 +30,33 @@ export default function Title() {
           Spaces
         </Link>
       </Typography>
-    </Box>
+
+      <HighlightBox>
+        <Typography variant="h5" component="p">
+          Run your ML demo with ease in a Next.js/React environment
+        </Typography>
+      </HighlightBox>
+
+      <Stack gap={2} direction="row">
+        <Button
+          startIcon={<ContentCopyIcon />}
+          variant="contained"
+          href="https://huggingface.co/spaces/failfast/nextjs-docker-starter?duplicate=true"
+          target="_blank"
+          rel="noopener"
+          color="secondary"
+        >
+          Duplicate space
+        </Button>
+
+        <Button
+          href="https://github.com/failfa-st/nextjs-docker-starter"
+          target="_blank"
+          rel="noopener"
+        >
+          Contribute on GitHub
+        </Button>
+      </Stack>
+    </Stack>
   );
 }

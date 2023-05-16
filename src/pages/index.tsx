@@ -6,6 +6,7 @@ import Huggingface from "@/components/huggingface/huggingface";
 import GettingStarted from "@/components/getting-started";
 import ExampleComponents from "@/components/example-components";
 import { Stack } from "@mui/material";
+import { DividerBox } from "@/components/boxes"
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
           <Title />
 
           <GettingStarted />
+
+          <DividerBox />
 
           <ExampleComponents />
         </Stack>

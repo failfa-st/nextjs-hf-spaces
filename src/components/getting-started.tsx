@@ -24,16 +24,8 @@ import { HighlightBox } from "./boxes";
 export default function GettingStarted() {
   return (
     <>
-      <Stack sx={{ alignItems: "center", mb: 2 }}>
-        <HighlightBox>
-          <Typography variant="h5" component="p">
-            Run your ML demo with ease in a Next.js/React environment
-          </Typography>
-        </HighlightBox>
-      </Stack>
-
       <Grid container spacing={2}>
-        <Grid item sm={8} lg={6}>
+        <Grid item sm={8} lg={6} sx={{ justifyContent: "center" }}>
           <Paper sx={{ p: 2 }}>
             <List disablePadding>
               <ListSubheader>Features</ListSubheader>
@@ -98,8 +90,7 @@ export default function GettingStarted() {
                   <SyncIcon />
                 </ListItemIcon>
                 <ListItemText>
-                  Sync your repo on GitHub with your 🤗 Space via a GitHub
-                  Action
+                  Sync your repo on GitHub with your 🤗 Space
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -115,40 +106,28 @@ export default function GettingStarted() {
         <Grid item sm={4} lg={3}>
           <Stack gap={2}>
             <Paper sx={{ p: 2 }}>
-              <Stack gap={2}>
-                <Button
-                  startIcon={<ContentCopyIcon />}
-                  variant="contained"
-                  href="https://huggingface.co/spaces/failfast/nextjs-docker-starter?duplicate=true"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Duplicate space
-                </Button>
-
-                <Button
-                  href="https://github.com/failfa-st/nextjs-docker-starter"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Contribute on GitHub
-                </Button>
-              </Stack>
-            </Paper>
-
-            <Paper sx={{ p: 2 }}>
               <Typography variant="body1">
-                Get started with the{" "}
-                <Link href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/blob/main/README.md">
+                Explore our{" "}
+                <Link
+                  href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/blob/main/README.md"
+                  target="_blank"
+                  rel="noopener"
+                >
                   README
-                </Link>
+                </Link>{" "}
+                for a comprehensive guide on local development, Docker
+                utilization, secret management, and GitHub-based Space control.
               </Typography>
             </Paper>
 
             <Paper sx={{ p: 2 }}>
               <Typography variant="body1">
                 Something missing?{" "}
-                <Link href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/discussions">
+                <Link
+                  href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/discussions"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Please let us know!
                 </Link>
               </Typography>
