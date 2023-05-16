@@ -11,22 +11,18 @@ const Footer = () => {
         justifyContent: "center",
         gap: 1,
         alignItems: "center",
+        mt: 8,
+        mb: 4,
       }}
     >
-      <Link href="https://failfa.st" display="flex" alignItems="center">
-        Powered by{" "}
-        <Image src="/failfast.svg" alt="failfast Logo" width="32" height="32" />
-      </Link>
-
-      <Divider orientation="vertical" flexItem />
-
       <Link
-        href="https://github.com/failfa-st/nextjs-docker-starter"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="https://failfa.st"
+        display="flex"
+        alignItems="center"
+        rel="noopener"
       >
-        {" "}
-        Contribute on GitHub
+        <Box sx={{ mr: 0.5 }}>Powered by</Box>{" "}
+        <Image src="/failfast.svg" alt="failfast Logo" width="32" height="32" />
       </Link>
     </Box>
   );

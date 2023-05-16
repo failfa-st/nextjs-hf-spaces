@@ -8,7 +8,7 @@ export default function Title() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "50vh",
+        minHeight: "20vh",
       }}
     >
       <Typography variant="h2" component="h1">
@@ -20,14 +20,6 @@ export default function Title() {
         >
           Next.js
         </Link>{" "}
-        in{" "}
-        <Link
-          href="https://www.docker.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Docker
-        </Link>{" "}
         on 🤗{" "}
         <Link
           href="https://huggingface.co/spaces"
@@ -36,7 +28,6 @@ export default function Title() {
         >
           Spaces
         </Link>
-        !
       </Typography>
     </Box>
   );

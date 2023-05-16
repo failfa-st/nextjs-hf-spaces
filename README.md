@@ -1,25 +1,23 @@
 ---
-title: Next.js Docker Starter
+title: Next.js on 🤗 Spaces
 emoji: "\U0001F433\U0001F918"
-colorFrom: purple
-colorTo: blue
+colorFrom: blue
+colorTo: yellow
 sdk: docker
 pinned: false
 license: agpl-3.0
 app_port: 3000
 ---
-
-# nextjs-docker-starter
+<h1 align="center">nextjs-docker-starter</h1>
 
 This starter can be used to run [Next.js](https://nextjs.org/) using [Docker](https://huggingface.co/docs/hub/spaces-sdks-docker) in 🤗 [Spaces](https://huggingface.co/spaces).
 
 <!-- toc -->
 
-- [nextjs-docker-starter](#nextjs-docker-starter)
-  - [Development](#development)
-  - [Use the Docker container locally](#use-the-docker-container-locally)
-  - [Dockerize an existing project](#dockerize-an-existing-project)
-  - [Manage your Space via GitHub](#manage-your-space-via-github)
+- [Development](#development)
+- [Use the Docker container locally](#use-the-docker-container-locally)
+- [Dockerize an existing project](#dockerize-an-existing-project)
+- [Manage your Space via GitHub](#manage-your-space-via-github)
 
 <!-- tocstop -->
 
@@ -71,3 +69,4 @@ If you want to use all the features for collaborative development on GitHub, but
 This should force push changes in the **main** branch from GitHub into your 🤗 space.
 
 For further information, you can check out the [guide on Hugging Face](https://huggingface.co/docs/hub/spaces-github-actions).
+

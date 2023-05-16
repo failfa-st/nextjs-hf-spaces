@@ -31,16 +31,25 @@ const theme = extendTheme({
     dark: {
       palette: {
         primary: {
-          main: "#00d720",
+          main: "#2c90fc",
         },
         secondary: {
-          main: "#cc06ed",
+          main: "#b827fc",
         },
       },
     },
   },
   typography: {
     ...roboto.style,
+  },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecoration: "none",
+        },
+      },
+    },
   },
 });
 
