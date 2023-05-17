@@ -20,6 +20,7 @@ const Footer = () => {
         display="flex"
         alignItems="center"
         rel="noopener"
+        target="_blank"
       >
         <Box sx={{ mr: 0.5 }}>Powered by</Box>{" "}
         <Image src="/failfast.svg" alt="failfast Logo" width="32" height="32" />
