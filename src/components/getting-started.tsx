@@ -90,7 +90,7 @@ export default function GettingStarted() {
                   <SyncIcon />
                 </ListItemIcon>
                 <ListItemText>
-                  Sync your repo on GitHub with your 🤗 Space
+                  Sync your GitHub repository with your 🤗 Space
                 </ListItemText>
               </ListItem>
               <ListItem>
