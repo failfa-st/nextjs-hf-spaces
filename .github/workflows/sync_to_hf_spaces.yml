@@ -6,7 +6,7 @@ on:
 
 env:
   HF_USERNAME: failfast
-  HF_SPACE_NAME: nextjs-docker-starter
+  HF_SPACE_NAME: nextjs-hf-spaces
 
 jobs:
   sync-to-space:
