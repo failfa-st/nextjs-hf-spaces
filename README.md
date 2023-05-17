@@ -1,6 +1,6 @@
 ---
-title: Next.js on 🤗 Spaces
-emoji: "\U0001F433\U0001F918"
+title: "Next.js on \U0001F917 Spaces"
+emoji: "🐳🤗"
 colorFrom: blue
 colorTo: yellow
 sdk: docker
@@ -14,16 +14,16 @@ This starter can be used to run [Next.js](https://nextjs.org/) using [Docker](ht
 
 <!-- toc -->
 
-- [Development](#development)
+- [Local development](#local-development)
 - [Use the Docker container locally](#use-the-docker-container-locally)
 - [Dockerize an existing project](#dockerize-an-existing-project)
-- [Manage your Space via GitHub](#manage-your-space-via-github)
+- [Manage your 🤗 Space via GitHub](#manage-your-%F0%9F%A4%97-space-via-github)
 
 <!-- tocstop -->
 
 ---
 
-## Development
+## Local development
 
 1. Install the dependencies: `npm i`
 2. Start the local dev-server: `npm run dev`
@@ -53,7 +53,7 @@ module.exports = {
 
 This will build the project as a standalone app inside the Docker image.
 
-## Manage your Space via GitHub
+## Manage your 🤗 Space via GitHub
 
 If you want to use all the features for collaborative development on GitHub, but keep your demo on Spaces, then you can set up a GitHub action that will automatically push changes from GitHub into Spaces.
 
@@ -69,4 +69,5 @@ If you want to use all the features for collaborative development on GitHub, but
 This should force push changes in the **main** branch from GitHub into your 🤗 space.
 
 For further information, you can check out the [guide on Hugging Face](https://huggingface.co/docs/hub/spaces-github-actions).
+
 
