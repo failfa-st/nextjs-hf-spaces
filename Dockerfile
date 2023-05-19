@@ -15,6 +15,10 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
+# Uncomment the following lines if you want to use a secret at buildtime, 
+# for example to access your private npm packages
+# RUN --mount=type=secret,id=HF_EXAMPLE_SECRET,mode=0444,required=true \
+#     $(cat /run/secrets/HF_EXAMPLE_SECRET)
 
 # Rebuild the source code only when needed
 FROM base AS builder

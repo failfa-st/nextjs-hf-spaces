@@ -6,7 +6,7 @@ import Huggingface from "@/components/huggingface/huggingface";
 import GettingStarted from "@/components/getting-started";
 import ExampleComponents from "@/components/example-components";
 import { Stack } from "@mui/material";
-import { DividerBox } from "@/components/boxes"
+import { DividerBox } from "@/components/base/boxes";
 
 export default function Home() {
   return (

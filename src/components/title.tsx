@@ -1,5 +1,5 @@
 import { Button, Link, Paper, Stack, Typography } from "@mui/material";
-import { HighlightBox } from "./boxes";
+import { HighlightBox } from "./base/boxes";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 export default function Title() {
@@ -33,7 +33,7 @@ export default function Title() {
 
       <HighlightBox>
         <Typography variant="h5" component="p">
-          Run your ML demo with ease in a Next.js/React environment
+          Run your ML demo with ease in a Next.js environment
         </Typography>
       </HighlightBox>
 

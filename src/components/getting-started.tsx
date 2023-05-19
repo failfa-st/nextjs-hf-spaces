@@ -19,7 +19,7 @@ import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfi
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import LinkIcon from "@mui/icons-material/Link";
 import SyncIcon from "@mui/icons-material/Sync";
-import { HighlightBox } from "./boxes";
+import { HighlightBox } from "./base/boxes";
 
 export default function GettingStarted() {
   return (
@@ -28,7 +28,7 @@ export default function GettingStarted() {
         <Grid item sm={8} lg={6} sx={{ justifyContent: "center" }}>
           <Paper sx={{ p: 2 }}>
             <List disablePadding>
-              <ListSubheader>Features</ListSubheader>
+              <ListSubheader sx={{ fontSize: "1.5em" }}>Features</ListSubheader>
 
               <ListItem>
                 <ListItemIcon>
@@ -58,7 +58,15 @@ export default function GettingStarted() {
                   >
                     langchain.js
                   </Link>{" "}
-                  components (WIP)
+                  and{" "}
+                  <Link
+                    href="https://github.com/failfa-st/hyv"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    hyv
+                  </Link>{" "}
+                  components (comming soon)
                 </ListItemText>
               </ListItem>
 
@@ -107,7 +115,7 @@ export default function GettingStarted() {
           <Stack gap={2}>
             <Paper sx={{ p: 2 }}>
               <Typography variant="body1">
-                Explore our{" "}
+                Explore the{" "}
                 <Link
                   href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/blob/main/README.md"
                   target="_blank"
@@ -122,14 +130,16 @@ export default function GettingStarted() {
 
             <Paper sx={{ p: 2 }}>
               <Typography variant="body1">
-                Something missing?{" "}
+                Have feedback or ideas?{" "}
                 <Link
                   href="https://huggingface.co/spaces/failfast/nextjs-docker-starter/discussions"
                   target="_blank"
                   rel="noopener"
                 >
-                  Please let us know!
-                </Link>
+                  We&apos;re eager to hear from you!
+                </Link>{" "}
+                As an open-source project in its early stages, your input can
+                significantly shape our development.
               </Typography>
             </Paper>
           </Stack>
