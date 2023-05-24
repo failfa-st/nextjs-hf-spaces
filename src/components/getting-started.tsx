@@ -24,8 +24,8 @@ import { HighlightBox } from "./base/boxes";
 export default function GettingStarted() {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid item sm={8} lg={6} sx={{ justifyContent: "center" }}>
+      <Grid container spacing={2} sx={{ justifyContent: "center" }}>
+        <Grid item sm={8} lg={6}>
           <Paper sx={{ p: 2 }}>
             <List disablePadding>
               <ListSubheader sx={{ fontSize: "1.5em" }}>Features</ListSubheader>
