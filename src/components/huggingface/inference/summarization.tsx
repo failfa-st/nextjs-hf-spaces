@@ -3,8 +3,6 @@ import {
   Box,
   Button,
   CircularProgress,
-  IconButton,
-  InputAdornment,
   Paper,
   Slider,
   Stack,
@@ -13,11 +11,11 @@ import {
 } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import { HfInference, SummarizationArgs } from "@huggingface/inference";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { InferenceProps } from "../huggingface";
 import Options from "@/components/base/options";
 import SliderWithLabel from "@/components/base/slider-with-label";
 import ExampleButton from "@/components/base/example-button";
+import Secret from "@/components/base/secret";
 
 type SummarizationProps = InferenceProps & {
   /**
@@ -66,7 +64,6 @@ export default function Summarization(props: SummarizationProps) {
   const [inputText, setInputText] = useState<string>("");
   const [summary, setSummary] = useState<string>("");
   const [error, setError] = useState<string>("");
-  const [showToken, setShowToken] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const inference = useRef<HfInference | null>(null);
@@ -87,8 +84,6 @@ export default function Summarization(props: SummarizationProps) {
 
     call({ model, inputs: text, parameters: { max_length } });
   };
-
-  const handleShowToken = () => setShowToken(!showToken);
 
   /**
    * Call the inference API using args
@@ -161,21 +156,7 @@ export default function Summarization(props: SummarizationProps) {
           />
 
           <Options>
-            <TextField
-              variant="filled"
-              label="HF Access Token"
-              name="token"
-              type={showToken ? "text" : "password"}
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton onClick={handleShowToken}>
-                      {showToken ? <Visibility /> : <VisibilityOff />}
-                    </IconButton>
-                  </InputAdornment>
-                ),
-              }}
-            />
+            <Secret name="token" label="HF Access Token" />
 
             <SliderWithLabel
               label="max_length"
